@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Crud2.Models.AdmUsuarioRol>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Asignar Roles a Usuarios</h2>
+<br />
+<a>
+    @Html.ActionLink("Nuevo", "Create", null, new { @class = "btn btn-success btn-block", @style = " width: 160px; font-size: medium;" })
+</a>
+<link rel="stylesheet" href="~/Content/ViewDataTable.css">
+<link rel="stylesheet" href="~/Content/layout.css">
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .lineaf {
+        display: inline-block;
+    }
+
+    .table td, th, label {
+        font-size: medium;
+    }
+
+    .forms {
+        z-index: 1;
+    }
+</style>
+<br /><br />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var groupedResults = Model.GroupBy(x => x.AdmUsuario.codUsuario);
+        }
+        @foreach (var group in groupedResults)
+        {
+            var userRoles = group.ToList();
+            var user = userRoles.First().AdmUsuario;
+            <tr>
+                <td rowspan="@group.Count()">
+                    @Html.DisplayFor(modelItem => user.codUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => userRoles.First().AdmRol.nombreRol)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = userRoles.First().codUsuarioRol }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = userRoles.First().codUsuarioRol })
+                </td>
+            </tr>
+            for (int i = 1; i < userRoles.Count(); i++)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => userRoles[i].AdmRol.nombreRol)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = userRoles[i].codUsuarioRol }) |
+                        @Html.ActionLink("Eliminar", "Delete", new { id = userRoles[i].codUsuarioRol })
+                    </td>
+                    
+                </tr>
+            }
+        }
+    </tbody>
+</table>

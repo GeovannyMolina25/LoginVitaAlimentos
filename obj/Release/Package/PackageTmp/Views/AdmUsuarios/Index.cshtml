@@ -1,0 +1,112 @@
+﻿@model IEnumerable<Crud2.Models.AdmUsuario>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Index</h2>
+<link rel="stylesheet" href="~/Content/ViewDataTable.css">
+<link rel="stylesheet" href="~/Content/layout.css">
+<br />
+<a>
+    @Html.ActionLink("Nuevo", "Create", null, new { @class = "btn btn-success btn-block", @style = " width: 160px; font-size: medium;" })
+</a>
+<br />
+<br />
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .lineaf {
+        display: inline-block;
+    }
+
+    .table td, th, label {
+        font-size: medium;
+    }
+
+    .forms {
+        z-index: 1;
+    }
+</style>
+
+<table class="table table-striped" id="tabla2">
+    <thead>
+        <tr>
+            <th style="text-align:center">
+                Código
+            </th>
+            <th style="text-align:center">
+                Usuario
+            </th>
+            <th style="text-align:center">
+                Empresa
+            </th>
+            <th style="text-align:center">
+                Sitio
+            </th>
+            <th style="text-align:center">
+                Activo
+            </th>
+            <th style="text-align:center">
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codRegistro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdmSitio.AdmEmpresa.nombreEmpresa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdmSitio.nombreSitio)
+                </td>
+                <td style="text-align:center">
+                    @if (item.activo == 1)
+                    {
+                        <i class="fas fa-check" style="color:forestgreen"></i> <!-- Icono de check para activo -->
+                    }
+                    else
+                    {
+                        <i class="fas fa-times" style="color:red"></i> <!-- Icono de cruz para inactivo -->
+                    }
+                </td>
+                <td style="text-align:center">
+                    @Html.ActionLink("Editar", "Edit", new { id = item.codUsuario }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.codUsuario }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.codUsuario })|
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts{
+    <script src="//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tabla2').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ registros"
+                },
+                lengthMenu: [10, 15, 20, 50],
+                dom: 'lftrip',
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros"
+            });
+
+        });
+    </script>
+}

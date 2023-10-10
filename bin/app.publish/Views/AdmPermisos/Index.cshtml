@@ -1,0 +1,138 @@
+﻿@model IEnumerable<Crud2.Models.AdmPermisos>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Administración de Permisos</h2>
+<link rel="stylesheet" href="~/Content/ViewDataTable.css">
+<link rel="stylesheet" href="~/Content/layout.css">
+<br />
+<a>
+    @Html.ActionLink("Nuevo", "Create", null, new { @class = "btn btn-success btn-block", @style = " width: 160px; font-size: medium;" })
+</a>
+
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .lineaf {
+        display: inline-block;
+    }
+
+    .table td, th, label {
+        font-size: medium;
+    }
+
+    .forms {
+        z-index: 1;
+    }
+</style>
+<br />
+
+<table class="table table-striped" id="tabla2">
+    <thead>
+        <tr>
+            <th>
+                Nº
+            </th>
+            <th>
+                Formulario
+            </th>
+            <th>
+                Carpeta
+            </th>
+            <th>
+                Vista
+            </th>
+            <th>
+                Etiqueta
+            </th>
+            <th>
+                Rol
+            </th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody >
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codRegistro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codForm)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.carpeta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vista)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.etiquetaMenu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdmRol.nombreRol)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.codRegistro }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.codRegistro }) |
+                    <a class="letra" href="#" onclick="confirmDelete('@item.codRegistro')">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!---Mensajes de Alerta/Confirmación-->
+<div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar eliminación</h5>
+            </div>
+            <div class="modal-body">
+                ¿Está seguro de que desea eliminar este registro?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" onclick="deleteConfirmed()">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tabla2').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ registros"
+                },
+                lengthMenu: [10, 15, 20, 50],
+                dom: 'lftrip',
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros"
+            });
+
+        });
+        var codRol= null;
+
+    function confirmDelete(id) {
+        $('#confirm-delete-modal').modal('show');
+        $('#confirm-delete-modal').on('shown.bs.modal', function (e) {
+            $('#confirm-delete-modal').find('.btn-danger').on('click', function () {
+                window.location.href = '@Url.Action("DeleteConfirmed", "AdmPermisos")/' + id;
+            });
+        });
+    }
+
+    </script>
+}

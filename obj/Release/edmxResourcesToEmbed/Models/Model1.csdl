@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdmEmpresa">
+    <Key>
+      <PropertyRef Name="codEmpresa" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreEmpresa" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmSitio" Relationship="Self.FK_AdmSitio_AdmEmpresa1" FromRole="AdmEmpresa" ToRole="AdmSitio" />
+  </EntityType>
+  <EntityType Name="AdmEstado">
+    <Key>
+      <PropertyRef Name="codEstado" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codEstado" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreEstado" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProAdmForm" Relationship="Self.FK_ProAdmForm_AdmEstado" FromRole="AdmEstado" ToRole="ProAdmForm" />
+  </EntityType>
+  <EntityType Name="AdmFormulario">
+    <Key>
+      <PropertyRef Name="codFormulario" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codFormulario" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreFormulario" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProAdmForm" Relationship="Self.FK_ProAdmForm_AdmFormulario" FromRole="AdmFormulario" ToRole="ProAdmForm" />
+  </EntityType>
+  <EntityType Name="AdmPermisos">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codForm" Type="String" MaxLength="192" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="carpeta" Type="String" MaxLength="192" FixedLength="false" Unicode="false" />
+    <Property Name="codRol" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="vista" Type="String" MaxLength="192" FixedLength="false" Unicode="false" />
+    <Property Name="etiquetaMenu" Type="String" MaxLength="192" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codEquipo" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmRol" Relationship="Self.FK_AdmPermisos_AdmRol" FromRole="AdmPermisos" ToRole="AdmRol" />
+  </EntityType>
+  <EntityType Name="AdmProgAccionesFormulario">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codRegistroFormulario" Type="Int32" />
+    <Property Name="Accion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="creadoPor" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="fechaAccion" Type="DateTime" Precision="0" />
+    <Property Name="horaActual" Type="Time" Precision="3" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProAdmForm" Relationship="Self.FK_AdmProgAccionesFormulario_ProAdmForm" FromRole="AdmProgAccionesFormulario" ToRole="ProAdmForm" />
+  </EntityType>
+  <EntityType Name="AdmRol">
+    <Key>
+      <PropertyRef Name="codRol" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codRol" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreRol" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmPermisos" Relationship="Self.FK_AdmPermisos_AdmRol" FromRole="AdmRol" ToRole="AdmPermisos" />
+    <NavigationProperty Name="AdmUsuarioRol" Relationship="Self.FK_AdmUsuarioRol_AdmRol" FromRole="AdmRol" ToRole="AdmUsuarioRol" />
+  </EntityType>
+  <EntityType Name="AdmSitio">
+    <Key>
+      <PropertyRef Name="codSitio" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codSitio" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreSitio" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmEmpresa" Relationship="Self.FK_AdmSitio_AdmEmpresa1" FromRole="AdmSitio" ToRole="AdmEmpresa" />
+    <NavigationProperty Name="AdmUsuario" Relationship="Self.FK_AdmUsuario_AdmSitio" FromRole="AdmSitio" ToRole="AdmUsuario" />
+  </EntityType>
+  <EntityType Name="AdmUnidadMedida">
+    <Key>
+      <PropertyRef Name="codUnidadMedida" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codUnidadMedida" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreUnidadMedida" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProParametro" Relationship="Self.FK_ProParametro_AdmUnidadMedida" FromRole="AdmUnidadMedida" ToRole="ProParametro" />
+  </EntityType>
+  <EntityType Name="AdmUsuario">
+    <Key>
+      <PropertyRef Name="codUsuario" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codUsuario" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="contraseña" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="correo" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="resetPass" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="codSitio" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmSitio" Relationship="Self.FK_AdmUsuario_AdmSitio" FromRole="AdmUsuario" ToRole="AdmSitio" />
+    <NavigationProperty Name="AdmUsuarioRol" Relationship="Self.FK_AdmUsuarioRol_AdmUsuario" FromRole="AdmUsuario" ToRole="AdmUsuarioRol" />
+    <NavigationProperty Name="ProRegOprEstREDA1" Relationship="Self.FK_ProRegOprEstREDA1_AdmUsuario" FromRole="AdmUsuario" ToRole="ProRegOprEstREDA1" />
+    <NavigationProperty Name="ProRegOprTanASE" Relationship="Self.FK_ProRegOprTanASE_AdmUsuario" FromRole="AdmUsuario" ToRole="ProRegOprTanASE" />
+  </EntityType>
+  <EntityType Name="AdmUsuarioRol">
+    <Key>
+      <PropertyRef Name="codUsuarioRol" />
+    </Key>
+    <Property Name="codUsuarioRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codUsuario" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="codRol" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmRol" Relationship="Self.FK_AdmUsuarioRol_AdmRol" FromRole="AdmUsuarioRol" ToRole="AdmRol" />
+    <NavigationProperty Name="AdmUsuario" Relationship="Self.FK_AdmUsuarioRol_AdmUsuario" FromRole="AdmUsuarioRol" ToRole="AdmUsuario" />
+  </EntityType>
+  <EntityType Name="PQPRODMAQUINA">
+    <Key>
+      <PropertyRef Name="codEquipo" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codEquipo" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreEquipo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="codSitio" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProAdmForm" Relationship="Self.FK_ProAdmForm_Equipo" FromRole="PQPRODMAQUINA" ToRole="ProAdmForm" />
+  </EntityType>
+  <EntityType Name="ProAdmForm">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codFormulario" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codEstado" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="aprobadoPor" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="fechaAprobacion" Type="DateTime" Precision="0" />
+    <Property Name="horaAprobacion" Type="Time" Precision="3" />
+    <Property Name="codEquipo" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="0" />
+    <Property Name="codUsuarioCrea" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmEstado" Relationship="Self.FK_ProAdmForm_AdmEstado" FromRole="ProAdmForm" ToRole="AdmEstado" />
+    <NavigationProperty Name="AdmFormulario" Relationship="Self.FK_ProAdmForm_AdmFormulario" FromRole="ProAdmForm" ToRole="AdmFormulario" />
+    <NavigationProperty Name="AdmProgAccionesFormulario" Relationship="Self.FK_AdmProgAccionesFormulario_ProAdmForm" FromRole="ProAdmForm" ToRole="AdmProgAccionesFormulario" />
+    <NavigationProperty Name="PQPRODMAQUINA" Relationship="Self.FK_ProAdmForm_Equipo" FromRole="ProAdmForm" ToRole="PQPRODMAQUINA" />
+    <NavigationProperty Name="ProRegOprEstREDA1" Relationship="Self.FK_ProRegOprEstREDA1_ProAdmForm" FromRole="ProAdmForm" ToRole="ProRegOprEstREDA1" />
+    <NavigationProperty Name="ProRegOprTanASE" Relationship="Self.FK_ProRegOprTanASE_ProAdmForm" FromRole="ProAdmForm" ToRole="ProRegOprTanASE" />
+  </EntityType>
+  <EntityType Name="ProParametro">
+    <Key>
+      <PropertyRef Name="codParametro" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codParametro" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreParametro" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="minimoParametro" Type="Double" />
+    <Property Name="maximoParametro" Type="Double" />
+    <Property Name="codProceso" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="activo" Type="Int32" />
+    <Property Name="codUnidadMedida" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmUnidadMedida" Relationship="Self.FK_ProParametro_AdmUnidadMedida" FromRole="ProParametro" ToRole="AdmUnidadMedida" />
+    <NavigationProperty Name="ProProceso" Relationship="Self.FK_ProParametro_ProProceso" FromRole="ProParametro" ToRole="ProProceso" />
+    <NavigationProperty Name="ProRegOprEstREDA1" Relationship="Self.FK_ProRegOprEstREDA1_ProParametro" FromRole="ProParametro" ToRole="ProRegOprEstREDA1" />
+    <NavigationProperty Name="ProRegOprTanASE" Relationship="Self.FK_ProRegOprTanASE_ProParametro1" FromRole="ProParametro" ToRole="ProRegOprTanASE" />
+  </EntityType>
+  <EntityType Name="ProProceso">
+    <Key>
+      <PropertyRef Name="codProceso" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codProceso" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombreProceso" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProParametro" Relationship="Self.FK_ProParametro_ProProceso" FromRole="ProProceso" ToRole="ProParametro" />
+  </EntityType>
+  <EntityType Name="ProRegOprEstREDA1">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="valorProReg" Type="Double" />
+    <Property Name="fechaTrabajoProReg" Type="DateTime" Precision="0" />
+    <Property Name="horaTrabajoProReg" Type="Time" Precision="3" />
+    <Property Name="fechaCreaProReg" Type="DateTime" Precision="0" />
+    <Property Name="fechaModProReg" Type="DateTime" Precision="0" />
+    <Property Name="codUsuarioCrea" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codUsuarioMod" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codParametro" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="maximoParametro" Type="Double" />
+    <Property Name="minimoParametro" Type="Double" />
+    <Property Name="nombreUnidadMedida" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="codRegistroFormulario" Type="Int32" />
+    <Property Name="codSitio" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmUsuario" Relationship="Self.FK_ProRegOprEstREDA1_AdmUsuario" FromRole="ProRegOprEstREDA1" ToRole="AdmUsuario" />
+    <NavigationProperty Name="ProAdmForm" Relationship="Self.FK_ProRegOprEstREDA1_ProAdmForm" FromRole="ProRegOprEstREDA1" ToRole="ProAdmForm" />
+    <NavigationProperty Name="ProParametro" Relationship="Self.FK_ProRegOprEstREDA1_ProParametro" FromRole="ProRegOprEstREDA1" ToRole="ProParametro" />
+  </EntityType>
+  <EntityType Name="ProRegOprTanASE">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="valorProReg" Type="Double" />
+    <Property Name="fechaTrabajoProReg" Type="DateTime" Precision="0" />
+    <Property Name="horaTrabajoProReg" Type="Time" Precision="3" />
+    <Property Name="fechaCreaProReg" Type="DateTime" Precision="0" />
+    <Property Name="fechaModProReg" Type="DateTime" Precision="0" />
+    <Property Name="codUsuarioCrea" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codUsuarioMod" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codParametro" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="maximoParametro" Type="Double" />
+    <Property Name="minimoParametro" Type="Double" />
+    <Property Name="nombreUnidadMedida" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="codRegistroFormulario" Type="Int32" />
+    <Property Name="codSitio" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="codEmpresa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdmUsuario" Relationship="Self.FK_ProRegOprTanASE_AdmUsuario" FromRole="ProRegOprTanASE" ToRole="AdmUsuario" />
+    <NavigationProperty Name="ProAdmForm" Relationship="Self.FK_ProRegOprTanASE_ProAdmForm" FromRole="ProRegOprTanASE" ToRole="ProAdmForm" />
+    <NavigationProperty Name="ProParametro" Relationship="Self.FK_ProRegOprTanASE_ProParametro1" FromRole="ProRegOprTanASE" ToRole="ProParametro" />
+  </EntityType>
+  <Association Name="FK_AdmSitio_AdmEmpresa1">
+    <End Role="AdmEmpresa" Type="Self.AdmEmpresa" Multiplicity="0..1" />
+    <End Role="AdmSitio" Type="Self.AdmSitio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmEmpresa">
+        <PropertyRef Name="codEmpresa" />
+      </Principal>
+      <Dependent Role="AdmSitio">
+        <PropertyRef Name="codEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProAdmForm_AdmEstado">
+    <End Role="AdmEstado" Type="Self.AdmEstado" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmEstado">
+        <PropertyRef Name="codEstado" />
+      </Principal>
+      <Dependent Role="ProAdmForm">
+        <PropertyRef Name="codEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProAdmForm_AdmFormulario">
+    <End Role="AdmFormulario" Type="Self.AdmFormulario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmFormulario">
+        <PropertyRef Name="codFormulario" />
+      </Principal>
+      <Dependent Role="ProAdmForm">
+        <PropertyRef Name="codFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmPermisos_AdmRol">
+    <End Role="AdmRol" Type="Self.AdmRol" Multiplicity="0..1" />
+    <End Role="AdmPermisos" Type="Self.AdmPermisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmRol">
+        <PropertyRef Name="codRol" />
+      </Principal>
+      <Dependent Role="AdmPermisos">
+        <PropertyRef Name="codRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmProgAccionesFormulario_ProAdmForm">
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdmProgAccionesFormulario" Type="Self.AdmProgAccionesFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProAdmForm">
+        <PropertyRef Name="codRegistro" />
+      </Principal>
+      <Dependent Role="AdmProgAccionesFormulario">
+        <PropertyRef Name="codRegistroFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmUsuarioRol_AdmRol">
+    <End Role="AdmRol" Type="Self.AdmRol" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdmUsuarioRol" Type="Self.AdmUsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmRol">
+        <PropertyRef Name="codRol" />
+      </Principal>
+      <Dependent Role="AdmUsuarioRol">
+        <PropertyRef Name="codRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmUsuario_AdmSitio">
+    <End Role="AdmSitio" Type="Self.AdmSitio" Multiplicity="0..1" />
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmSitio">
+        <PropertyRef Name="codSitio" />
+      </Principal>
+      <Dependent Role="AdmUsuario">
+        <PropertyRef Name="codSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProParametro_AdmUnidadMedida">
+    <End Role="AdmUnidadMedida" Type="Self.AdmUnidadMedida" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUnidadMedida">
+        <PropertyRef Name="codUnidadMedida" />
+      </Principal>
+      <Dependent Role="ProParametro">
+        <PropertyRef Name="codUnidadMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmUsuarioRol_AdmUsuario">
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdmUsuarioRol" Type="Self.AdmUsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUsuario">
+        <PropertyRef Name="codUsuario" />
+      </Principal>
+      <Dependent Role="AdmUsuarioRol">
+        <PropertyRef Name="codUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprEstREDA1_AdmUsuario">
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprEstREDA1" Type="Self.ProRegOprEstREDA1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUsuario">
+        <PropertyRef Name="codUsuario" />
+      </Principal>
+      <Dependent Role="ProRegOprEstREDA1">
+        <PropertyRef Name="codUsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprTanASE_AdmUsuario">
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprTanASE" Type="Self.ProRegOprTanASE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUsuario">
+        <PropertyRef Name="codUsuario" />
+      </Principal>
+      <Dependent Role="ProRegOprTanASE">
+        <PropertyRef Name="codUsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProAdmForm_Equipo">
+    <End Role="PQPRODMAQUINA" Type="Self.PQPRODMAQUINA" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PQPRODMAQUINA">
+        <PropertyRef Name="codEquipo" />
+      </Principal>
+      <Dependent Role="ProAdmForm">
+        <PropertyRef Name="codEquipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprEstREDA1_ProAdmForm">
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprEstREDA1" Type="Self.ProRegOprEstREDA1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProAdmForm">
+        <PropertyRef Name="codRegistro" />
+      </Principal>
+      <Dependent Role="ProRegOprEstREDA1">
+        <PropertyRef Name="codRegistroFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprTanASE_ProAdmForm">
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprTanASE" Type="Self.ProRegOprTanASE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProAdmForm">
+        <PropertyRef Name="codRegistro" />
+      </Principal>
+      <Dependent Role="ProRegOprTanASE">
+        <PropertyRef Name="codRegistroFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProParametro_ProProceso">
+    <End Role="ProProceso" Type="Self.ProProceso" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProProceso">
+        <PropertyRef Name="codProceso" />
+      </Principal>
+      <Dependent Role="ProParametro">
+        <PropertyRef Name="codProceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprEstREDA1_ProParametro">
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprEstREDA1" Type="Self.ProRegOprEstREDA1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProParametro">
+        <PropertyRef Name="codParametro" />
+      </Principal>
+      <Dependent Role="ProRegOprEstREDA1">
+        <PropertyRef Name="codParametro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprTanASE_ProParametro1">
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprTanASE" Type="Self.ProRegOprTanASE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProParametro">
+        <PropertyRef Name="codParametro" />
+      </Principal>
+      <Dependent Role="ProRegOprTanASE">
+        <PropertyRef Name="codParametro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdmEmpresa" EntityType="Self.AdmEmpresa" />
+    <EntitySet Name="AdmEstado" EntityType="Self.AdmEstado" />
+    <EntitySet Name="AdmFormulario" EntityType="Self.AdmFormulario" />
+    <EntitySet Name="AdmPermisos" EntityType="Self.AdmPermisos" />
+    <EntitySet Name="AdmProgAccionesFormulario" EntityType="Self.AdmProgAccionesFormulario" />
+    <EntitySet Name="AdmRol" EntityType="Self.AdmRol" />
+    <EntitySet Name="AdmSitio" EntityType="Self.AdmSitio" />
+    <EntitySet Name="AdmUnidadMedida" EntityType="Self.AdmUnidadMedida" />
+    <EntitySet Name="AdmUsuario" EntityType="Self.AdmUsuario" />
+    <EntitySet Name="AdmUsuarioRol" EntityType="Self.AdmUsuarioRol" />
+    <EntitySet Name="PQPRODMAQUINA" EntityType="Self.PQPRODMAQUINA" />
+    <EntitySet Name="ProAdmForm" EntityType="Self.ProAdmForm" />
+    <EntitySet Name="ProParametro" EntityType="Self.ProParametro" />
+    <EntitySet Name="ProProceso" EntityType="Self.ProProceso" />
+    <EntitySet Name="ProRegOprEstREDA1" EntityType="Self.ProRegOprEstREDA1" />
+    <EntitySet Name="ProRegOprTanASE" EntityType="Self.ProRegOprTanASE" />
+    <AssociationSet Name="FK_AdmSitio_AdmEmpresa1" Association="Self.FK_AdmSitio_AdmEmpresa1">
+      <End Role="AdmEmpresa" EntitySet="AdmEmpresa" />
+      <End Role="AdmSitio" EntitySet="AdmSitio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProAdmForm_AdmEstado" Association="Self.FK_ProAdmForm_AdmEstado">
+      <End Role="AdmEstado" EntitySet="AdmEstado" />
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProAdmForm_AdmFormulario" Association="Self.FK_ProAdmForm_AdmFormulario">
+      <End Role="AdmFormulario" EntitySet="AdmFormulario" />
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmPermisos_AdmRol" Association="Self.FK_AdmPermisos_AdmRol">
+      <End Role="AdmRol" EntitySet="AdmRol" />
+      <End Role="AdmPermisos" EntitySet="AdmPermisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmProgAccionesFormulario_ProAdmForm" Association="Self.FK_AdmProgAccionesFormulario_ProAdmForm">
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+      <End Role="AdmProgAccionesFormulario" EntitySet="AdmProgAccionesFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmUsuarioRol_AdmRol" Association="Self.FK_AdmUsuarioRol_AdmRol">
+      <End Role="AdmRol" EntitySet="AdmRol" />
+      <End Role="AdmUsuarioRol" EntitySet="AdmUsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmUsuario_AdmSitio" Association="Self.FK_AdmUsuario_AdmSitio">
+      <End Role="AdmSitio" EntitySet="AdmSitio" />
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProParametro_AdmUnidadMedida" Association="Self.FK_ProParametro_AdmUnidadMedida">
+      <End Role="AdmUnidadMedida" EntitySet="AdmUnidadMedida" />
+      <End Role="ProParametro" EntitySet="ProParametro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmUsuarioRol_AdmUsuario" Association="Self.FK_AdmUsuarioRol_AdmUsuario">
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+      <End Role="AdmUsuarioRol" EntitySet="AdmUsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprEstREDA1_AdmUsuario" Association="Self.FK_ProRegOprEstREDA1_AdmUsuario">
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+      <End Role="ProRegOprEstREDA1" EntitySet="ProRegOprEstREDA1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprTanASE_AdmUsuario" Association="Self.FK_ProRegOprTanASE_AdmUsuario">
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+      <End Role="ProRegOprTanASE" EntitySet="ProRegOprTanASE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProAdmForm_Equipo" Association="Self.FK_ProAdmForm_Equipo">
+      <End Role="PQPRODMAQUINA" EntitySet="PQPRODMAQUINA" />
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprEstREDA1_ProAdmForm" Association="Self.FK_ProRegOprEstREDA1_ProAdmForm">
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+      <End Role="ProRegOprEstREDA1" EntitySet="ProRegOprEstREDA1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprTanASE_ProAdmForm" Association="Self.FK_ProRegOprTanASE_ProAdmForm">
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+      <End Role="ProRegOprTanASE" EntitySet="ProRegOprTanASE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProParametro_ProProceso" Association="Self.FK_ProParametro_ProProceso">
+      <End Role="ProProceso" EntitySet="ProProceso" />
+      <End Role="ProParametro" EntitySet="ProParametro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprEstREDA1_ProParametro" Association="Self.FK_ProRegOprEstREDA1_ProParametro">
+      <End Role="ProParametro" EntitySet="ProParametro" />
+      <End Role="ProRegOprEstREDA1" EntitySet="ProRegOprEstREDA1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprTanASE_ProParametro1" Association="Self.FK_ProRegOprTanASE_ProParametro1">
+      <End Role="ProParametro" EntitySet="ProParametro" />
+      <End Role="ProRegOprTanASE" EntitySet="ProRegOprTanASE" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

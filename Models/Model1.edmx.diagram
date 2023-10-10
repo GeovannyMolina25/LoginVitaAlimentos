@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fa2653fd4da14ac894ddac2559bed374" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaModel.AdmEmpresa" Width="1.5" PointX="1.5" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmEstado" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmFormulario" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmPermisos" Width="1.5" PointX="13" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmProgAccionesFormulario" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmRol" Width="1.5" PointX="10.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmSitio" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmUnidadMedida" Width="1.5" PointX="0.75" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmUsuario" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.AdmUsuarioRol" Width="1.5" PointX="13" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.PQPRODMAQUINA" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.ProAdmForm" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.ProParametro" Width="1.5" PointX="3" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.ProProceso" Width="1.5" PointX="0.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.ProRegOprEstREDA1" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaModel.ProRegOprTanASE" Width="1.5" PointX="5.875" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="SistemaModel.FK_AdmSitio_AdmEmpresa1" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProAdmForm_AdmEstado" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProAdmForm_AdmFormulario" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_AdmPermisos_AdmRol" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_AdmProgAccionesFormulario_ProAdmForm" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_AdmUsuarioRol_AdmRol" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_AdmUsuario_AdmSitio" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProParametro_AdmUnidadMedida" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_AdmUsuarioRol_AdmUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProRegOprEstREDA1_AdmUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProRegOprTanASE_AdmUsuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProAdmForm_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProRegOprEstREDA1_ProAdmForm" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProRegOprTanASE_ProAdmForm" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProParametro_ProProceso" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProRegOprEstREDA1_ProParametro" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaModel.FK_ProRegOprTanASE_ProParametro1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

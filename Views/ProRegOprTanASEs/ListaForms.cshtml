@@ -1,0 +1,175 @@
+﻿@model IEnumerable<Crud2.Models.ProRegOprTanASE>
+@{
+    ViewBag.Title = "Aseptico";
+    Layout = "~/Views/Home/Menu.cshtml";
+    string titulo = ViewBag.codEquipo;
+    List<string> rol = ViewBag.codRol;
+    DateTime fechaForm = ViewBag.fecha;
+    string estado = ViewBag.estado;
+    int registro = ViewBag.codRegistro;
+}
+
+<h2>Registro Operacional Tanque @titulo  </h2>
+<br />
+<link rel="stylesheet" href="~/Content/ViewDataTable.css">
+<link rel="stylesheet" href="~/Content/layout.css">
+<hr />
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .lineaf {
+        display: inline-block;
+    }
+
+    .table td, th, label {
+        font-size: medium;
+    }
+
+    .forms {
+        z-index: 1;
+    }
+</style>
+
+<h2><b>@fechaForm.ToString("dd/MM/yyyy")</b></h2>
+<br />
+@if (@estado == "Creado" || @estado == "Rechazado")
+{
+    <p class="linea">
+        <a>
+            @Html.ActionLink("Nuevo", "Create", new { codEquipo = titulo, codRegistro = registro, fecha = @ViewBag.fecha, codEstado = estado }, new { @class = "btn btn-success btn-block", @style = " width: 160px; font-size: medium;" })
+        </a>
+    </p>
+    <p class="linea" style="float:right ">
+        <a class="btn btn-danger letra" style=" justify-content: flex-end;width: 160px " href="#" data-toggle="modal" data-target="#confirm-fin-modal">
+            Finalizar
+        </a>
+    </p>
+}
+else if (estado == "Finalizado")
+{
+    <label style="font-size: 18px; color: red; width: 200px; ">Registro Finalizado</label>
+}
+else if (estado == "Aprobado")
+{
+    <label style="font-size: 18px; color: red; width: 200px; ">Registro Aprobado</label>
+}
+
+<br />
+<br />
+<table class="forms table" id="tabla1">
+    <thead>
+        <tr>
+            <th>Nº</th>
+            <th>Hora</th>
+            <th>Aprobado Por</th>
+            <th>Creado Por</th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var hora in Model.Select(x => x.horaTrabajoProReg).Distinct())
+        {
+            var registrosHora = Model.Where(x => x.horaTrabajoProReg == hora);
+
+            foreach (var est in registrosHora.Select(x => x.ProAdmForm.AdmEstado.nombreEstado).Distinct())
+            {
+                var registrosEst = registrosHora.Where(x => x.ProAdmForm.AdmEstado.nombreEstado == est);
+
+                foreach (var aprob in registrosEst.Select(x => x.ProAdmForm.aprobadoPor).Distinct())
+                {
+                    var registrosAprob = registrosEst.Where(x => x.ProAdmForm.aprobadoPor == aprob);
+
+                    foreach (var crea in registrosAprob.Select(x => x.codUsuarioCrea).Distinct())
+                    {
+                        var registrosCrea = registrosAprob.Where(x => x.codUsuarioCrea == crea);
+
+                        foreach (var cod in registrosCrea.Select(x => x.codRegistroFormulario).Distinct())
+                        {
+                            var registrosCod = registrosCrea.Where(x => x.codRegistroFormulario == cod);
+                            bool mostrarBotones = true;
+
+                            foreach (var item in registrosHora)
+                            {
+                                if (mostrarBotones)
+                                {
+                                    <tr>
+                                        <td>@cod</td>
+                                        <td>@hora.Value.ToString(@"hh\:mm")</td>
+                                        <td>@aprob</td>
+                                        <td>@crea</td>
+                                        <td>
+                                            <a href="@Url.Action("Index", new { codEstado = @est, fecha = ViewBag.fecha,  hour=@hora ,codEquipo = titulo, codRegistro = registro})">Ver Detalle</a>
+                                        </td>
+                                    </tr>
+                                    mostrarBotones = false;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </tbody>
+</table>
+
+<div class=" ">
+    @Html.ActionLink("Regresar", "Registros", new { codEquipo = titulo }, new { @class = "btn btn-info linea letra" })
+</div>
+
+<!---Mensajes de Alerta/Confirmación-->
+<div class="modal fade" id="confirm-fin-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-fin-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm-fin-modal-label">Confirmar finalización</h5>
+            </div>
+            <div class="modal-body">
+                ¿Está seguro de que desea finalizar este registro?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" onclick="finConfirmed()">Finalizar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script src="//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json"></script>
+    <script>
+   /*     $(document).ready(function () {
+            $('#tabla1').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ registros"
+                },
+                lengthMenu: [10, 15, 20, 50],
+                dom: 'lftrip',
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros"
+            });
+     */       
+        });
+        // Almacenar la fecha seleccionada en la sesión después de enviar el formulario
+        $("form").submit(function () {
+            sessionStorage.setItem("fechaSeleccionada", $("input[name='fecha']").val());
+        });
+
+         function confirmFin() {
+            $('#confirm-fin-modal').modal('show');
+        }
+
+        function finConfirmed() {
+            // Llamar a la acción de eliminación
+            window.location.href = '@Url.Action("Finalizar", "ProRegOprTanASEs", new { id = registro, codEquipo = ViewBag.codEquipo, fecha = ViewBag.fecha })';
+        }
+
+
+    </script>
+}

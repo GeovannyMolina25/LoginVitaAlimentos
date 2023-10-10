@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdmEmpresa">
+    <Key>
+      <PropertyRef Name="codEmpresa" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreEmpresa" Type="varchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="AdmEstado">
+    <Key>
+      <PropertyRef Name="codEstado" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codEstado" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreEstado" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmFormulario">
+    <Key>
+      <PropertyRef Name="codFormulario" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codFormulario" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreFormulario" Type="varchar" MaxLength="256" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmPermisos">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codForm" Type="varchar" MaxLength="192" Nullable="false" />
+    <Property Name="carpeta" Type="varchar" MaxLength="192" />
+    <Property Name="codRol" Type="varchar" MaxLength="64" />
+    <Property Name="vista" Type="varchar" MaxLength="192" />
+    <Property Name="etiquetaMenu" Type="varchar" MaxLength="192" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+    <Property Name="codEquipo" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmProgAccionesFormulario">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codRegistroFormulario" Type="int" />
+    <Property Name="Accion" Type="varchar" MaxLength="50" />
+    <Property Name="creadoPor" Type="varchar" MaxLength="16" />
+    <Property Name="fechaAccion" Type="date" />
+    <Property Name="horaActual" Type="time" Precision="3" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmRol">
+    <Key>
+      <PropertyRef Name="codRol" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codRol" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="nombreRol" Type="varchar" MaxLength="150" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmSitio">
+    <Key>
+      <PropertyRef Name="codSitio" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codSitio" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreSitio" Type="varchar" MaxLength="128" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmUnidadMedida">
+    <Key>
+      <PropertyRef Name="codUnidadMedida" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codUnidadMedida" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreUnidadMedida" Type="varchar" MaxLength="64" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmUsuario">
+    <Key>
+      <PropertyRef Name="codUsuario" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codUsuario" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="contraseña" Type="varchar" MaxLength="128" />
+    <Property Name="correo" Type="varchar" MaxLength="256" />
+    <Property Name="resetPass" Type="varchar" MaxLength="256" />
+    <Property Name="codSitio" Type="varchar" MaxLength="16" />
+    <Property Name="activo" Type="int" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="AdmUsuarioRol">
+    <Key>
+      <PropertyRef Name="codUsuarioRol" />
+    </Key>
+    <Property Name="codUsuarioRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codUsuario" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="codRol" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="PQPRODMAQUINA">
+    <Key>
+      <PropertyRef Name="codEquipo" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codEquipo" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="nombreEquipo" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="codSitio" Type="varchar" MaxLength="16" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="ProAdmForm">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codFormulario" Type="varchar" MaxLength="16" />
+    <Property Name="codEstado" Type="varchar" MaxLength="16" />
+    <Property Name="aprobadoPor" Type="varchar" MaxLength="16" />
+    <Property Name="fechaAprobacion" Type="date" />
+    <Property Name="horaAprobacion" Type="time" Precision="3" />
+    <Property Name="codEquipo" Type="varchar" MaxLength="32" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+    <Property Name="fechaRegistro" Type="date" />
+    <Property Name="codUsuarioCrea" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="ProParametro">
+    <Key>
+      <PropertyRef Name="codParametro" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codParametro" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreParametro" Type="varchar" MaxLength="256" />
+    <Property Name="minimoParametro" Type="float" />
+    <Property Name="maximoParametro" Type="float" />
+    <Property Name="codProceso" Type="varchar" MaxLength="16" />
+    <Property Name="activo" Type="int" />
+    <Property Name="codUnidadMedida" Type="varchar" MaxLength="16" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="ProProceso">
+    <Key>
+      <PropertyRef Name="codProceso" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codProceso" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="nombreProceso" Type="varchar" MaxLength="256" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="ProRegOprEstREDA1">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="valorProReg" Type="float" />
+    <Property Name="fechaTrabajoProReg" Type="date" />
+    <Property Name="horaTrabajoProReg" Type="time" Precision="3" />
+    <Property Name="fechaCreaProReg" Type="date" />
+    <Property Name="fechaModProReg" Type="date" />
+    <Property Name="codUsuarioCrea" Type="varchar" MaxLength="16" />
+    <Property Name="codUsuarioMod" Type="varchar" MaxLength="16" />
+    <Property Name="codParametro" Type="varchar" MaxLength="16" />
+    <Property Name="maximoParametro" Type="float" />
+    <Property Name="minimoParametro" Type="float" />
+    <Property Name="nombreUnidadMedida" Type="varchar" MaxLength="32" />
+    <Property Name="codRegistroFormulario" Type="int" />
+    <Property Name="codSitio" Type="varchar" MaxLength="16" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="ProRegOprTanASE">
+    <Key>
+      <PropertyRef Name="codRegistro" />
+    </Key>
+    <Property Name="codRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="valorProReg" Type="float" />
+    <Property Name="fechaTrabajoProReg" Type="date" />
+    <Property Name="horaTrabajoProReg" Type="time" Precision="3" />
+    <Property Name="fechaCreaProReg" Type="date" />
+    <Property Name="fechaModProReg" Type="date" />
+    <Property Name="codUsuarioCrea" Type="varchar" MaxLength="16" />
+    <Property Name="codUsuarioMod" Type="varchar" MaxLength="16" />
+    <Property Name="codParametro" Type="varchar" MaxLength="16" />
+    <Property Name="maximoParametro" Type="float" />
+    <Property Name="minimoParametro" Type="float" />
+    <Property Name="nombreUnidadMedida" Type="varchar" MaxLength="32" />
+    <Property Name="codRegistroFormulario" Type="int" />
+    <Property Name="codSitio" Type="varchar" MaxLength="16" />
+    <Property Name="codEmpresa" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <Association Name="FK_AdmPermisos_AdmRol">
+    <End Role="AdmRol" Type="Self.AdmRol" Multiplicity="0..1" />
+    <End Role="AdmPermisos" Type="Self.AdmPermisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmRol">
+        <PropertyRef Name="codRol" />
+      </Principal>
+      <Dependent Role="AdmPermisos">
+        <PropertyRef Name="codRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmProgAccionesFormulario_ProAdmForm">
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdmProgAccionesFormulario" Type="Self.AdmProgAccionesFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProAdmForm">
+        <PropertyRef Name="codRegistro" />
+      </Principal>
+      <Dependent Role="AdmProgAccionesFormulario">
+        <PropertyRef Name="codRegistroFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmSitio_AdmEmpresa1">
+    <End Role="AdmEmpresa" Type="Self.AdmEmpresa" Multiplicity="0..1" />
+    <End Role="AdmSitio" Type="Self.AdmSitio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmEmpresa">
+        <PropertyRef Name="codEmpresa" />
+      </Principal>
+      <Dependent Role="AdmSitio">
+        <PropertyRef Name="codEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmUsuario_AdmSitio">
+    <End Role="AdmSitio" Type="Self.AdmSitio" Multiplicity="0..1" />
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmSitio">
+        <PropertyRef Name="codSitio" />
+      </Principal>
+      <Dependent Role="AdmUsuario">
+        <PropertyRef Name="codSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmUsuarioRol_AdmRol">
+    <End Role="AdmRol" Type="Self.AdmRol" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdmUsuarioRol" Type="Self.AdmUsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmRol">
+        <PropertyRef Name="codRol" />
+      </Principal>
+      <Dependent Role="AdmUsuarioRol">
+        <PropertyRef Name="codRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdmUsuarioRol_AdmUsuario">
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AdmUsuarioRol" Type="Self.AdmUsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUsuario">
+        <PropertyRef Name="codUsuario" />
+      </Principal>
+      <Dependent Role="AdmUsuarioRol">
+        <PropertyRef Name="codUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProAdmForm_AdmEstado">
+    <End Role="AdmEstado" Type="Self.AdmEstado" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmEstado">
+        <PropertyRef Name="codEstado" />
+      </Principal>
+      <Dependent Role="ProAdmForm">
+        <PropertyRef Name="codEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProAdmForm_AdmFormulario">
+    <End Role="AdmFormulario" Type="Self.AdmFormulario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmFormulario">
+        <PropertyRef Name="codFormulario" />
+      </Principal>
+      <Dependent Role="ProAdmForm">
+        <PropertyRef Name="codFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProAdmForm_Equipo">
+    <End Role="PQPRODMAQUINA" Type="Self.PQPRODMAQUINA" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PQPRODMAQUINA">
+        <PropertyRef Name="codEquipo" />
+      </Principal>
+      <Dependent Role="ProAdmForm">
+        <PropertyRef Name="codEquipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProParametro_AdmUnidadMedida">
+    <End Role="AdmUnidadMedida" Type="Self.AdmUnidadMedida" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUnidadMedida">
+        <PropertyRef Name="codUnidadMedida" />
+      </Principal>
+      <Dependent Role="ProParametro">
+        <PropertyRef Name="codUnidadMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProParametro_ProProceso">
+    <End Role="ProProceso" Type="Self.ProProceso" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProProceso">
+        <PropertyRef Name="codProceso" />
+      </Principal>
+      <Dependent Role="ProParametro">
+        <PropertyRef Name="codProceso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprEstREDA1_AdmUsuario">
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprEstREDA1" Type="Self.ProRegOprEstREDA1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUsuario">
+        <PropertyRef Name="codUsuario" />
+      </Principal>
+      <Dependent Role="ProRegOprEstREDA1">
+        <PropertyRef Name="codUsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprEstREDA1_ProAdmForm">
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprEstREDA1" Type="Self.ProRegOprEstREDA1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProAdmForm">
+        <PropertyRef Name="codRegistro" />
+      </Principal>
+      <Dependent Role="ProRegOprEstREDA1">
+        <PropertyRef Name="codRegistroFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprEstREDA1_ProParametro">
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprEstREDA1" Type="Self.ProRegOprEstREDA1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProParametro">
+        <PropertyRef Name="codParametro" />
+      </Principal>
+      <Dependent Role="ProRegOprEstREDA1">
+        <PropertyRef Name="codParametro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprTanASE_AdmUsuario">
+    <End Role="AdmUsuario" Type="Self.AdmUsuario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprTanASE" Type="Self.ProRegOprTanASE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdmUsuario">
+        <PropertyRef Name="codUsuario" />
+      </Principal>
+      <Dependent Role="ProRegOprTanASE">
+        <PropertyRef Name="codUsuarioCrea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprTanASE_ProAdmForm">
+    <End Role="ProAdmForm" Type="Self.ProAdmForm" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprTanASE" Type="Self.ProRegOprTanASE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProAdmForm">
+        <PropertyRef Name="codRegistro" />
+      </Principal>
+      <Dependent Role="ProRegOprTanASE">
+        <PropertyRef Name="codRegistroFormulario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProRegOprTanASE_ProParametro1">
+    <End Role="ProParametro" Type="Self.ProParametro" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProRegOprTanASE" Type="Self.ProRegOprTanASE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProParametro">
+        <PropertyRef Name="codParametro" />
+      </Principal>
+      <Dependent Role="ProRegOprTanASE">
+        <PropertyRef Name="codParametro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaModelStoreContainer">
+    <EntitySet Name="AdmEmpresa" EntityType="Self.AdmEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmEstado" EntityType="Self.AdmEstado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmFormulario" EntityType="Self.AdmFormulario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmPermisos" EntityType="Self.AdmPermisos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmProgAccionesFormulario" EntityType="Self.AdmProgAccionesFormulario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmRol" EntityType="Self.AdmRol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmSitio" EntityType="Self.AdmSitio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmUnidadMedida" EntityType="Self.AdmUnidadMedida" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmUsuario" EntityType="Self.AdmUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdmUsuarioRol" EntityType="Self.AdmUsuarioRol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PQPRODMAQUINA" EntityType="Self.PQPRODMAQUINA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProAdmForm" EntityType="Self.ProAdmForm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProParametro" EntityType="Self.ProParametro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProProceso" EntityType="Self.ProProceso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProRegOprEstREDA1" EntityType="Self.ProRegOprEstREDA1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProRegOprTanASE" EntityType="Self.ProRegOprTanASE" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AdmPermisos_AdmRol" Association="Self.FK_AdmPermisos_AdmRol">
+      <End Role="AdmRol" EntitySet="AdmRol" />
+      <End Role="AdmPermisos" EntitySet="AdmPermisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmProgAccionesFormulario_ProAdmForm" Association="Self.FK_AdmProgAccionesFormulario_ProAdmForm">
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+      <End Role="AdmProgAccionesFormulario" EntitySet="AdmProgAccionesFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmSitio_AdmEmpresa1" Association="Self.FK_AdmSitio_AdmEmpresa1">
+      <End Role="AdmEmpresa" EntitySet="AdmEmpresa" />
+      <End Role="AdmSitio" EntitySet="AdmSitio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmUsuario_AdmSitio" Association="Self.FK_AdmUsuario_AdmSitio">
+      <End Role="AdmSitio" EntitySet="AdmSitio" />
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmUsuarioRol_AdmRol" Association="Self.FK_AdmUsuarioRol_AdmRol">
+      <End Role="AdmRol" EntitySet="AdmRol" />
+      <End Role="AdmUsuarioRol" EntitySet="AdmUsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdmUsuarioRol_AdmUsuario" Association="Self.FK_AdmUsuarioRol_AdmUsuario">
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+      <End Role="AdmUsuarioRol" EntitySet="AdmUsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProAdmForm_AdmEstado" Association="Self.FK_ProAdmForm_AdmEstado">
+      <End Role="AdmEstado" EntitySet="AdmEstado" />
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProAdmForm_AdmFormulario" Association="Self.FK_ProAdmForm_AdmFormulario">
+      <End Role="AdmFormulario" EntitySet="AdmFormulario" />
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProAdmForm_Equipo" Association="Self.FK_ProAdmForm_Equipo">
+      <End Role="PQPRODMAQUINA" EntitySet="PQPRODMAQUINA" />
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProParametro_AdmUnidadMedida" Association="Self.FK_ProParametro_AdmUnidadMedida">
+      <End Role="AdmUnidadMedida" EntitySet="AdmUnidadMedida" />
+      <End Role="ProParametro" EntitySet="ProParametro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProParametro_ProProceso" Association="Self.FK_ProParametro_ProProceso">
+      <End Role="ProProceso" EntitySet="ProProceso" />
+      <End Role="ProParametro" EntitySet="ProParametro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprEstREDA1_AdmUsuario" Association="Self.FK_ProRegOprEstREDA1_AdmUsuario">
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+      <End Role="ProRegOprEstREDA1" EntitySet="ProRegOprEstREDA1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprEstREDA1_ProAdmForm" Association="Self.FK_ProRegOprEstREDA1_ProAdmForm">
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+      <End Role="ProRegOprEstREDA1" EntitySet="ProRegOprEstREDA1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprEstREDA1_ProParametro" Association="Self.FK_ProRegOprEstREDA1_ProParametro">
+      <End Role="ProParametro" EntitySet="ProParametro" />
+      <End Role="ProRegOprEstREDA1" EntitySet="ProRegOprEstREDA1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprTanASE_AdmUsuario" Association="Self.FK_ProRegOprTanASE_AdmUsuario">
+      <End Role="AdmUsuario" EntitySet="AdmUsuario" />
+      <End Role="ProRegOprTanASE" EntitySet="ProRegOprTanASE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprTanASE_ProAdmForm" Association="Self.FK_ProRegOprTanASE_ProAdmForm">
+      <End Role="ProAdmForm" EntitySet="ProAdmForm" />
+      <End Role="ProRegOprTanASE" EntitySet="ProRegOprTanASE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProRegOprTanASE_ProParametro1" Association="Self.FK_ProRegOprTanASE_ProParametro1">
+      <End Role="ProParametro" EntitySet="ProParametro" />
+      <End Role="ProRegOprTanASE" EntitySet="ProRegOprTanASE" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,132 @@
+﻿@model IEnumerable<Crud2.Models.ProAdmForm>
+
+@{
+    ViewBag.Title = "Aseptico rcajas";
+    string titulo = ViewBag.codEquipo;
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+<link rel="stylesheet" href="~/Content/ViewDataTable.css">
+<link rel="stylesheet" href="~/Content/layout.css">
+<h2>Formularios @titulo</h2>
+<br />
+<br />
+@{
+    // Obtener el valor actual de la fecha de la sesión
+    DateTime fechaSeleccionada = ViewBag.FechaSeleccionada ?? DateTime.Now;
+
+}
+@using (Html.BeginForm("CreateRegistros", "ProRegOprTanASEs", new { fecha = ViewBag.Fecha, codEquipo = ViewBag.codEquipo }, FormMethod.Get))
+{
+    <div style="display: flex;">
+        <label for="fecha" class="" style="margin-right: 15px;">Fecha:</label>
+        <input type="date" name="fecha" class="form-control" max="@DateTime.Now.ToString("yyyy-MM-dd")" value="@fechaSeleccionada.ToString("yyyy-MM-dd")" style="font-size: medium; height: 34px; width:350px; margin-right: 10px" />
+        <input type="hidden" name="codEquipo" value="@ViewBag.codEquipo" />
+        <button type="submit" class="btn btn-success" style="font-size: medium; height: 34px; line-height: 17px; width: 120px">Crear</button>
+        <!-- RCAJAS <button type="submit" name="btnActualizar" class="btn btn-primary" style="font-size: medium; height: 34px; line-height: 17px; margin-left: 15px; width: 120px">Actualizar</button> -->
+    </div>
+}
+<br />
+<br />
+<table class="forms table" id="tabla2">
+    <thead>
+        <tr>
+            <th>
+                Código
+            </th>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>
+                Creado Por
+            </th>
+            <th>
+                Aprobado Por
+            </th>
+            <th>
+                Acciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codRegistro)
+                </td>
+                <td>
+                    @((item.fechaRegistro ?? DateTime.MinValue).ToString("dd/MM/yyyy"))
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdmEstado.nombreEstado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codUsuarioCrea)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.aprobadoPor)
+                </td>
+                <td>
+                    @Html.ActionLink("Ver Detalle", "ListaForms", new { codEquipo = item.codEquipo, codRegistro = item.codRegistro, fecha = item.fechaRegistro, estado = item.AdmEstado.nombreEstado }) |
+                    <a class="letra" href="#" onclick="confirmDelete('@item.codRegistro')">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<!---Mensajes de Alerta/Confirmación-->
+<div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar eliminación</h5>
+            </div>
+            <div class="modal-body">
+                ¿Está seguro de que desea eliminar este registro?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" onclick="deleteConfirmed()">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json"></script>
+    <script>
+     /*   $(document).ready(function () {
+            $('#tabla2').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.24/i18n/Spanish.json",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ registros"
+                },
+                lengthMenu: [10, 15, 20, 50],
+                dom: 'lftrip',
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros"
+            });
+
+        });
+        */
+        // Almacenar la fecha seleccionada en la sesión después de enviar el formulario
+        $("form").submit(function () {
+            sessionStorage.setItem("fechaSeleccionada", $("input[name='fecha']").val());
+        });
+
+       function confirmDelete(id) {
+            $('#confirm-delete-modal').modal('show');
+            $('#confirm-delete-modal').on('shown.bs.modal', function (e) {
+                $('#confirm-delete-modal').find('.btn-danger').on('click', function () {
+                    window.location.href = "/ProRegOprTanASEs/DeleteConfirmedForm?codEquipo=" + encodeURIComponent('@ViewBag.codEquipo') + "&id=" + encodeURIComponent(id);
+                });
+            });
+        }
+
+    </script>
+}

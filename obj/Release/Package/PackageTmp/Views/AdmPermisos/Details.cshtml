@@ -1,0 +1,75 @@
+﻿@model Crud2.Models.AdmPermisos
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Detalles Permisos</h2>
+
+<link rel="stylesheet" href="~/Content/layout.css">
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+</style>
+<div>
+    <hr />
+    <dl class="dl-horizontal" style="font-size:18px;">
+        <dt style="text-align:left">
+            Formulario
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codForm)
+        </dd>
+        <br />
+        <dt style="text-align:left">
+            Carpeta
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.carpeta)
+        </dd>
+        <br />
+        <dt style="text-align:left">
+            Vista
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vista)
+        </dd>
+        <br />
+        <dt style="text-align:left">
+            Etiqueta
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.etiquetaMenu)
+        </dd>
+        <br />
+        <dt style="text-align:left">
+            Rol
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmRol.nombreRol)
+        </dd>
+        <br />
+        <dt style="text-align:left">
+            Equipo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codEquipo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <div class=" linea" >
+        @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-info btn-block" , @style = "font-size:18px" })
+    </div>
+</p>

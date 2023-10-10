@@ -1,0 +1,70 @@
+﻿@model Crud2.Models.AdmUsuario
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Detalles Usuario</h2>
+<link rel="stylesheet" href="~/Content/layout.css">
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+</style>
+<hr />
+
+<a>
+    @Html.ActionLink("Reestablecer Contraseña", "ResetPassword", new {usu = ViewBag.usu }, new { @class = "btn btn-success btn-block", @style = " width: 200px; font-size: medium;" })
+</a>
+<br /><embed />
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            Usuario
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codUsuario)
+        </dd>
+        <br />
+        <dt>
+            Correo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+        <br />
+        <dt>
+            Empresa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmSitio.AdmEmpresa.nombreEmpresa)
+        </dd>
+        <br />
+        <dt>
+            Sitio
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmSitio.nombreSitio)
+        </dd>
+        <br />
+        <dt>
+            Activo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activo)
+        </dd>
+    </dl>
+</div>
+<br />
+<div>
+    <div class=" linea">
+        @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-info btn-block" })
+    </div>

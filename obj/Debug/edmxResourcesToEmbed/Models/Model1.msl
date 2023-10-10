@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaModelStoreContainer" CdmEntityContainer="SistemaEntities">
+    <EntitySetMapping Name="AdmEmpresa">
+      <EntityTypeMapping TypeName="SistemaModel.AdmEmpresa">
+        <MappingFragment StoreEntitySet="AdmEmpresa">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+          <ScalarProperty Name="nombreEmpresa" ColumnName="nombreEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmEstado">
+      <EntityTypeMapping TypeName="SistemaModel.AdmEstado">
+        <MappingFragment StoreEntitySet="AdmEstado">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codEstado" ColumnName="codEstado" />
+          <ScalarProperty Name="nombreEstado" ColumnName="nombreEstado" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmFormulario">
+      <EntityTypeMapping TypeName="SistemaModel.AdmFormulario">
+        <MappingFragment StoreEntitySet="AdmFormulario">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codFormulario" ColumnName="codFormulario" />
+          <ScalarProperty Name="nombreFormulario" ColumnName="nombreFormulario" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmPermisos">
+      <EntityTypeMapping TypeName="SistemaModel.AdmPermisos">
+        <MappingFragment StoreEntitySet="AdmPermisos">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codForm" ColumnName="codForm" />
+          <ScalarProperty Name="carpeta" ColumnName="carpeta" />
+          <ScalarProperty Name="codRol" ColumnName="codRol" />
+          <ScalarProperty Name="vista" ColumnName="vista" />
+          <ScalarProperty Name="etiquetaMenu" ColumnName="etiquetaMenu" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+          <ScalarProperty Name="codEquipo" ColumnName="codEquipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmProgAccionesFormulario">
+      <EntityTypeMapping TypeName="SistemaModel.AdmProgAccionesFormulario">
+        <MappingFragment StoreEntitySet="AdmProgAccionesFormulario">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codRegistroFormulario" ColumnName="codRegistroFormulario" />
+          <ScalarProperty Name="Accion" ColumnName="Accion" />
+          <ScalarProperty Name="creadoPor" ColumnName="creadoPor" />
+          <ScalarProperty Name="fechaAccion" ColumnName="fechaAccion" />
+          <ScalarProperty Name="horaActual" ColumnName="horaActual" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmRol">
+      <EntityTypeMapping TypeName="SistemaModel.AdmRol">
+        <MappingFragment StoreEntitySet="AdmRol">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codRol" ColumnName="codRol" />
+          <ScalarProperty Name="nombreRol" ColumnName="nombreRol" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmSitio">
+      <EntityTypeMapping TypeName="SistemaModel.AdmSitio">
+        <MappingFragment StoreEntitySet="AdmSitio">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codSitio" ColumnName="codSitio" />
+          <ScalarProperty Name="nombreSitio" ColumnName="nombreSitio" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmUnidadMedida">
+      <EntityTypeMapping TypeName="SistemaModel.AdmUnidadMedida">
+        <MappingFragment StoreEntitySet="AdmUnidadMedida">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codUnidadMedida" ColumnName="codUnidadMedida" />
+          <ScalarProperty Name="nombreUnidadMedida" ColumnName="nombreUnidadMedida" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmUsuario">
+      <EntityTypeMapping TypeName="SistemaModel.AdmUsuario">
+        <MappingFragment StoreEntitySet="AdmUsuario">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="contraseña" ColumnName="contraseña" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="resetPass" ColumnName="resetPass" />
+          <ScalarProperty Name="codSitio" ColumnName="codSitio" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdmUsuarioRol">
+      <EntityTypeMapping TypeName="SistemaModel.AdmUsuarioRol">
+        <MappingFragment StoreEntitySet="AdmUsuarioRol">
+          <ScalarProperty Name="codUsuarioRol" ColumnName="codUsuarioRol" />
+          <ScalarProperty Name="codUsuario" ColumnName="codUsuario" />
+          <ScalarProperty Name="codRol" ColumnName="codRol" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PQPRODMAQUINA">
+      <EntityTypeMapping TypeName="SistemaModel.PQPRODMAQUINA">
+        <MappingFragment StoreEntitySet="PQPRODMAQUINA">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codEquipo" ColumnName="codEquipo" />
+          <ScalarProperty Name="nombreEquipo" ColumnName="nombreEquipo" />
+          <ScalarProperty Name="codSitio" ColumnName="codSitio" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProAdmForm">
+      <EntityTypeMapping TypeName="SistemaModel.ProAdmForm">
+        <MappingFragment StoreEntitySet="ProAdmForm">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codFormulario" ColumnName="codFormulario" />
+          <ScalarProperty Name="codEstado" ColumnName="codEstado" />
+          <ScalarProperty Name="aprobadoPor" ColumnName="aprobadoPor" />
+          <ScalarProperty Name="fechaAprobacion" ColumnName="fechaAprobacion" />
+          <ScalarProperty Name="horaAprobacion" ColumnName="horaAprobacion" />
+          <ScalarProperty Name="codEquipo" ColumnName="codEquipo" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="codUsuarioCrea" ColumnName="codUsuarioCrea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProParametro">
+      <EntityTypeMapping TypeName="SistemaModel.ProParametro">
+        <MappingFragment StoreEntitySet="ProParametro">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codParametro" ColumnName="codParametro" />
+          <ScalarProperty Name="nombreParametro" ColumnName="nombreParametro" />
+          <ScalarProperty Name="minimoParametro" ColumnName="minimoParametro" />
+          <ScalarProperty Name="maximoParametro" ColumnName="maximoParametro" />
+          <ScalarProperty Name="codProceso" ColumnName="codProceso" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="codUnidadMedida" ColumnName="codUnidadMedida" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProProceso">
+      <EntityTypeMapping TypeName="SistemaModel.ProProceso">
+        <MappingFragment StoreEntitySet="ProProceso">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="codProceso" ColumnName="codProceso" />
+          <ScalarProperty Name="nombreProceso" ColumnName="nombreProceso" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProRegOprEstREDA1">
+      <EntityTypeMapping TypeName="SistemaModel.ProRegOprEstREDA1">
+        <MappingFragment StoreEntitySet="ProRegOprEstREDA1">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="valorProReg" ColumnName="valorProReg" />
+          <ScalarProperty Name="fechaTrabajoProReg" ColumnName="fechaTrabajoProReg" />
+          <ScalarProperty Name="horaTrabajoProReg" ColumnName="horaTrabajoProReg" />
+          <ScalarProperty Name="fechaCreaProReg" ColumnName="fechaCreaProReg" />
+          <ScalarProperty Name="fechaModProReg" ColumnName="fechaModProReg" />
+          <ScalarProperty Name="codUsuarioCrea" ColumnName="codUsuarioCrea" />
+          <ScalarProperty Name="codUsuarioMod" ColumnName="codUsuarioMod" />
+          <ScalarProperty Name="codParametro" ColumnName="codParametro" />
+          <ScalarProperty Name="maximoParametro" ColumnName="maximoParametro" />
+          <ScalarProperty Name="minimoParametro" ColumnName="minimoParametro" />
+          <ScalarProperty Name="nombreUnidadMedida" ColumnName="nombreUnidadMedida" />
+          <ScalarProperty Name="codRegistroFormulario" ColumnName="codRegistroFormulario" />
+          <ScalarProperty Name="codSitio" ColumnName="codSitio" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProRegOprTanASE">
+      <EntityTypeMapping TypeName="SistemaModel.ProRegOprTanASE">
+        <MappingFragment StoreEntitySet="ProRegOprTanASE">
+          <ScalarProperty Name="codRegistro" ColumnName="codRegistro" />
+          <ScalarProperty Name="valorProReg" ColumnName="valorProReg" />
+          <ScalarProperty Name="fechaTrabajoProReg" ColumnName="fechaTrabajoProReg" />
+          <ScalarProperty Name="horaTrabajoProReg" ColumnName="horaTrabajoProReg" />
+          <ScalarProperty Name="fechaCreaProReg" ColumnName="fechaCreaProReg" />
+          <ScalarProperty Name="fechaModProReg" ColumnName="fechaModProReg" />
+          <ScalarProperty Name="codUsuarioCrea" ColumnName="codUsuarioCrea" />
+          <ScalarProperty Name="codUsuarioMod" ColumnName="codUsuarioMod" />
+          <ScalarProperty Name="codParametro" ColumnName="codParametro" />
+          <ScalarProperty Name="maximoParametro" ColumnName="maximoParametro" />
+          <ScalarProperty Name="minimoParametro" ColumnName="minimoParametro" />
+          <ScalarProperty Name="nombreUnidadMedida" ColumnName="nombreUnidadMedida" />
+          <ScalarProperty Name="codRegistroFormulario" ColumnName="codRegistroFormulario" />
+          <ScalarProperty Name="codSitio" ColumnName="codSitio" />
+          <ScalarProperty Name="codEmpresa" ColumnName="codEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

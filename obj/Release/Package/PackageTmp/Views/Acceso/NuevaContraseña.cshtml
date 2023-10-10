@@ -1,0 +1,91 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/Front/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/Front/css/main.css">
+    <!--===============================================================================================-->
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+    @{
+        string error = ViewBag.Error;
+    }
+    @if (error != null)
+    {
+        <div class="alert alert-danger" role="alert" style="font-size:20px">@error</div>
+    }
+    else
+    {
+
+    }
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                <form class="login100-form validate-form" action="@Url.Action("NuevaContraseña","Acceso")" method="post">
+                    <span class="login100-form-title p-b-49">
+                        Reestablecer Contraseña -- @ViewBag.usu
+                    </span>
+                    <input type="hidden" name="usu" value="@ViewBag.usu" />
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="Es necesario ingresar un usuario">
+                        <span class="label-input100">Nueva Contraseña</span>
+                        <input class="input100" type="password" name="pass" placeholder="Ingrese su nueva contraseña">
+                        <span class="focus-input100" data-symbol="&#xf190;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Es necesario Ingresar una contraseña">
+                        <span class="label-input100">Confirmar Contraseña</span>
+                        <input class="input100" type="password" name="confpass" placeholder="Confirme su contraseña">
+                        <span class="focus-input100" data-symbol="&#xf190;"></span>
+                    </div>
+                    <br />
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn" type="submit">
+                                Guardar
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+    <script src="~/Front/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="~/Front/js/main.js"></script>
+
+
+</body>
+</html>
+@section Scripts{
+
+} 

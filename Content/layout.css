@@ -1,0 +1,310 @@
+﻿@charset "utf-8";
+
+@import url("framework.css");
+
+
+
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright {
+    padding: 30px 0 60px;
+    border-top: 1px solid;
+}
+
+    #copyright * {
+        margin: 0;
+        padding: 0;
+    }
+
+.overlay {
+    color: #FFFFFF;
+    background-color: inherit;
+}
+
+    .overlay::after {
+        color: inherit;
+        background-color: #FFFFFF;
+    }
+
+    .overlay.light {
+        color: #FFFFFF;
+    }
+
+        .overlay.light::after {
+            background-color: rgba(255,255,255,.7);
+        }
+
+.row5, .row5 a {
+    color: #000;
+}
+
+
+/* Header */
+
+
+
+/* Content */
+
+
+
+
+/* Copyright */
+#copyright {
+    border-color: rgb(0, 0, 0);
+}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport {
+    width: device-width;
+}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1140px) {
+    .hoc {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width:978px) and (max-width:1140px) {
+    .hoc {
+        max-width: 95%;
+    }
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:978px) {
+    .hoc {
+        max-width: 90%;
+    }
+
+    #header {
+        padding: 30px 0;
+    }
+
+        #header #logo {
+            margin-top: 0;
+        }
+
+    #comments input[type="reset"] {
+        margin-top: 10px;
+    }
+
+    .pagination li {
+        display: inline-block;
+        margin: 0 5px 5px 0;
+    }
+
+    #copyright p:first-of-type {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .imgl, .imgr {
+        display: inline-block;
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+    .fl_left, .fl_right {
+        display: block;
+        float: none;
+    }
+
+    .group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child {
+        margin-bottom: 0;
+    }
+    /* Experimental - Needs more testing in different situations, stops double margin when stacking */
+    .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter {
+        display: block;
+        float: none;
+        width: auto;
+        margin: 0 0 30px 0;
+    }
+
+    #topbar, #header {
+        text-align: center;
+    }
+
+        #header #logo {
+            margin: 0 0 15px 0;
+        }
+
+    #breadcrumb {
+        text-align: left;
+    }
+
+    #pageintro article {
+        max-width: none;
+    }
+
+    #pageintro .heading {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+    }
+
+    .sectiontitle {
+        max-width: none;
+    }
+
+    .sd-third > li {
+        max-width: 348px;
+    }
+    /* Restrict the width to the one_third grid element in smaller devices */
+
+    #services li:nth-last-child(-n+4) {
+        margin-bottom: 50px;
+    }
+
+    #services li:last-child {
+        margin-bottom: 0;
+    }
+
+    .team li, #latest > li {
+        margin: 0 auto 50px;
+    }
+
+    .points ul {
+        padding-top: 0;
+    }
+
+    #footer .latestimg > li, #footer .latestimg > li:nth-last-child(-n+3) {
+        display: inline-block;
+        float: none;
+        width: auto;
+        margin: 0 5% 5% 0;
+    }
+
+        #footer .latestimg > li:last-child {
+            margin-bottom: 0;
+        }
+
+        #footer .latestimg > li img {
+            width: auto;
+        }
+}
+
+@media screen and (max-width:450px) {
+    .points {
+        padding: 35px 25px;
+        border-radius: 25px 0;
+    }
+
+        .points li {
+            padding: 0;
+        }
+
+            .points li i {
+                position: relative;
+                top: inherit;
+                left: inherit;
+                margin-bottom: 20px;
+            }
+
+    #testimonials article figure img {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    #testimonials article figure figcaption {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px) {
+    .scrollable {
+        display: block;
+        width: 100%;
+        margin: 0 0 30px 0;
+        padding: 0 0 15px 0;
+        overflow: auto;
+        overflow-x: scroll;
+    }
+
+        .scrollable table {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+
+    .inline li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .pushright li {
+        margin-right: 0;
+    }
+
+    .font-x2 {
+        font-size: 1.6rem;
+    }
+
+    .font-x3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 800px) { 
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        float: none;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}
+@media (max-width: 576px) { /* Cambiar solo en pantallas pequeñas */
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        float: left;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}
+    @media (min-width: 800px) {
+        .fecha-label {
+            display: inline-block;
+            width: 200px;
+            font-size: 18px;
+            font-weight: normal;
+            width:300px;
+            margin-top:10px;
+        }
+
+    }
+    /* Estilos para pantallas menores a 800px */
+    @media (max-width: 800px) {
+        .fecha-label {
+            display: block;
+            width: 300px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+    }

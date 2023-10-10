@@ -1,0 +1,118 @@
+﻿@model Crud2.Models.AdmUsuario
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Editar Usuario</h2>
+<br />
+<h3><b>@ViewBag.fecha.ToString("dd/MM/yyyy")  -- @ViewBag.hora</b></h3>
+<link rel="stylesheet" href="~/Content/layout.css">
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .letra {
+        font-size: medium;
+    }
+</style>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+   
+
+<div class="form-horizontal">
+    <hr />
+    
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.codUsuario, "Usuario", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.codUsuario, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.codUsuario, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.contraseña, "Contraseña", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.contraseña, new { htmlAttributes = new { @class = "form-control", required = "required" } })
+            @Html.ValidationMessageFor(model => model.contraseña, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.correo, "Correo", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.correo, new { htmlAttributes = new { @class = "form-control", type = "email", required = "required" } })
+            @Html.ValidationMessageFor(model => model.correo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(model => model.codEmpresa, "Empresa", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("codEmpresa", null, htmlAttributes: new { @class = "form-control", @id = "codEmpresa" })
+                @Html.ValidationMessageFor(model => model.codEmpresa, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.codSitio, "Sitio", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("codSitio", null, htmlAttributes: new { @class = "form-control", @id = "codSitio" })
+                @Html.ValidationMessageFor(model => model.codSitio, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.activo, "Activo", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.activo, new List<SelectListItem>
+            {
+                new SelectListItem{ Text="1", Value = "1" },
+                new SelectListItem{ Text="0", Value = "0" },
+            }, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.activo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <br /><br />
+    <div>
+        <div class="linea ">
+            <input type="submit" value="Guardar" class="btn btn-success btn-block letra " />
+        </div>
+        <div class="linea">
+            @Html.ActionLink("Regresar ", "Index", new { }, new { @class = "btn btn-info btn-block letra" })
+        </div>
+    </div>
+</div>
+}
+
+@section scripts{
+    <script>
+    $(function () {
+        $("#codEmpresa").change(function () {
+            var selectedValue = $(this).val();
+            $.ajax({
+                url: "@Url.Action("GetSitiosByEmpresa", "AdmUsuarios")",
+                type: "GET",
+                data: { codEmpresa: selectedValue },
+                dataType: "json",
+                success: function (data) {
+                    $("#codSitio").empty();
+                    $.each(data, function (index, value) {
+                        $("#codSitio").append("<option value='" + value.Value + "'>" + value.Text + "</option>");
+                    });
+                }
+            });
+        });
+    });
+    </script>
+}

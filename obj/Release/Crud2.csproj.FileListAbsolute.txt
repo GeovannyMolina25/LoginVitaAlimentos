@@ -1,0 +1,754 @@
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Crud2.dll.config
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Crud2.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Crud2.pdb
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\csc.exe
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\csc.exe.config
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\csc.rsp
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\csi.exe
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\csi.exe.config
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\csi.rsp
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.AppContext.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Console.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.IO.Compression.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Net.Http.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.ValueTuple.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\vbc.exe
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\vbc.exe.config
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\vbc.rsp
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\VBCSCompiler.exe
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Antlr3.Runtime.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\EntityFramework.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\EntityFramework.SqlServer.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Newtonsoft.Json.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Data.SqlClient.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Helpers.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Mvc.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Optimization.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Razor.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.WebPages.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.WebPages.Razor.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\WebGrease.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\EntityFramework.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\EntityFramework.SqlServer.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Data.SqlClient.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Helpers.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Mvc.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Optimization.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.Razor.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.WebPages.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\System.Web.WebPages.Razor.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Newtonsoft.Json.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Antlr3.Runtime.pdb
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.Razor.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\obj\Release\Crud2.csproj.CopyComplete
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\obj\Release\Crud2.dll
+C:\Users\Liiz\Desktop\PapelesTitulación\Crud2\obj\Release\Crud2.pdb
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Crud2.dll.config
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Crud2.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Crud2.pdb
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\csc.exe
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\csc.exe.config
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\csc.rsp
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\csi.exe
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\csi.exe.config
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\csi.rsp
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Console.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\vbc.exe
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\vbc.exe.config
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\vbc.rsp
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Antlr3.Runtime.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\EntityFramework.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Newtonsoft.Json.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Data.SqlClient.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Helpers.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Mvc.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Optimization.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Razor.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.WebPages.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\WebGrease.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\EntityFramework.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Data.SqlClient.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Helpers.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Mvc.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Optimization.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.Razor.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.WebPages.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Newtonsoft.Json.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\DesarrolloWebVS2022\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\DesarrolloWebVS2022\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+C:\DesarrolloWebVS2022\FormulariosProduccion\obj\Release\Crud2.dll
+C:\DesarrolloWebVS2022\FormulariosProduccion\obj\Release\Crud2.pdb
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Crud2.dll.config
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Crud2.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Crud2.pdb
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\csc.exe
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\csc.exe.config
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\csc.rsp
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\csi.exe
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\csi.exe.config
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\csi.rsp
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Console.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\vbc.exe
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\vbc.exe.config
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\vbc.rsp
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Antlr3.Runtime.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\EntityFramework.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Newtonsoft.Json.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Data.SqlClient.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Helpers.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Mvc.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Optimization.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Razor.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.WebPages.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\WebGrease.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\EntityFramework.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Data.SqlClient.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Helpers.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Mvc.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Optimization.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.Razor.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.WebPages.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Newtonsoft.Json.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\obj\Release\Crud2.dll
+C:\DesarrolloWebVS2022\Desarrollo\FormulariosProduccion\obj\Release\Crud2.pdb
+I:\FormulariosProduccion\bin\Crud2.dll.config
+I:\FormulariosProduccion\bin\Crud2.dll
+I:\FormulariosProduccion\bin\Crud2.pdb
+I:\FormulariosProduccion\bin\roslyn\csc.exe
+I:\FormulariosProduccion\bin\roslyn\csc.exe.config
+I:\FormulariosProduccion\bin\roslyn\csc.rsp
+I:\FormulariosProduccion\bin\roslyn\csi.exe
+I:\FormulariosProduccion\bin\roslyn\csi.exe.config
+I:\FormulariosProduccion\bin\roslyn\csi.rsp
+I:\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+I:\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+I:\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+I:\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+I:\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+I:\FormulariosProduccion\bin\roslyn\System.Console.dll
+I:\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+I:\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+I:\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+I:\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+I:\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+I:\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+I:\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+I:\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+I:\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+I:\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+I:\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+I:\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+I:\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+I:\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+I:\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+I:\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+I:\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+I:\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+I:\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+I:\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+I:\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+I:\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+I:\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+I:\FormulariosProduccion\bin\roslyn\vbc.exe
+I:\FormulariosProduccion\bin\roslyn\vbc.exe.config
+I:\FormulariosProduccion\bin\roslyn\vbc.rsp
+I:\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+I:\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+I:\FormulariosProduccion\bin\Antlr3.Runtime.dll
+I:\FormulariosProduccion\bin\EntityFramework.dll
+I:\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+I:\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+I:\FormulariosProduccion\bin\Newtonsoft.Json.dll
+I:\FormulariosProduccion\bin\System.Data.SqlClient.dll
+I:\FormulariosProduccion\bin\System.Web.Helpers.dll
+I:\FormulariosProduccion\bin\System.Web.Mvc.dll
+I:\FormulariosProduccion\bin\System.Web.Optimization.dll
+I:\FormulariosProduccion\bin\System.Web.Razor.dll
+I:\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+I:\FormulariosProduccion\bin\System.Web.WebPages.dll
+I:\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+I:\FormulariosProduccion\bin\WebGrease.dll
+I:\FormulariosProduccion\bin\EntityFramework.xml
+I:\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+I:\FormulariosProduccion\bin\System.Data.SqlClient.xml
+I:\FormulariosProduccion\bin\System.Web.Helpers.xml
+I:\FormulariosProduccion\bin\System.Web.Mvc.xml
+I:\FormulariosProduccion\bin\System.Web.Optimization.xml
+I:\FormulariosProduccion\bin\System.Web.Razor.xml
+I:\FormulariosProduccion\bin\System.Web.WebPages.xml
+I:\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+I:\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+I:\FormulariosProduccion\bin\Newtonsoft.Json.xml
+I:\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+I:\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+I:\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+I:\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+I:\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+I:\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+I:\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+I:\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+I:\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+I:\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+I:\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+I:\FormulariosProduccion\obj\Release\Crud2.dll
+I:\FormulariosProduccion\obj\Release\Crud2.pdb
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Crud2.dll.config
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Crud2.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Crud2.pdb
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\csc.exe
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\csc.exe.config
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\csc.rsp
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\csi.exe
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\csi.exe.config
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\csi.rsp
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Console.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\vbc.exe
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\vbc.exe.config
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\vbc.rsp
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+C:\ProyectoLimpieza\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Antlr3.Runtime.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\EntityFramework.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Newtonsoft.Json.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Data.SqlClient.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Helpers.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Mvc.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Optimization.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Razor.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.WebPages.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\WebGrease.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\EntityFramework.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Data.SqlClient.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Helpers.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Mvc.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Optimization.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.Razor.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.WebPages.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Newtonsoft.Json.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+C:\ProyectoLimpieza\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\ProyectoLimpieza\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\ProyectoLimpieza\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\ProyectoLimpieza\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+C:\ProyectoLimpieza\FormulariosProduccion\obj\Release\Crud2.dll
+C:\ProyectoLimpieza\FormulariosProduccion\obj\Release\Crud2.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Crud2.dll.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Crud2.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Crud2.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\csc.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\csc.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\csc.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\csi.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\csi.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\csi.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Console.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\vbc.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\vbc.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\vbc.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Antlr3.Runtime.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\EntityFramework.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Newtonsoft.Json.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Data.SqlClient.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Helpers.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Mvc.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Optimization.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Razor.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.WebPages.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\WebGrease.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\EntityFramework.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Data.SqlClient.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Helpers.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Mvc.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Optimization.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Razor.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.WebPages.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Newtonsoft.Json.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\obj\Release\Crud2.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\obj\Release\Crud2.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Net.Http.Formatting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Http.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Http.WebHost.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Net.Http.Formatting.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Http.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\prueba 4\FormulariosProduccion\bin\System.Web.Http.WebHost.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Crud2.dll.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Crud2.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Crud2.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\csc.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\csc.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\csc.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\csi.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\csi.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\csi.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Console.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\vbc.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\vbc.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\vbc.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Antlr3.Runtime.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\EntityFramework.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Newtonsoft.Json.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Data.SqlClient.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Net.Http.Formatting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Helpers.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Http.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Http.WebHost.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Mvc.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Optimization.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Razor.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.WebPages.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\WebGrease.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\EntityFramework.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Data.SqlClient.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Net.Http.Formatting.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Http.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Http.WebHost.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Helpers.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Mvc.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Optimization.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.Razor.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.WebPages.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Newtonsoft.Json.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\obj\Release\Crud2.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect(Casi listo)\FormulariosProduccion\obj\Release\Crud2.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Crud2.dll.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Crud2.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Crud2.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\csc.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\csc.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\csc.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\csi.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\csi.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\csi.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.AppContext.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Collections.Immutable.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Console.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Globalization.Calendars.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.IO.Compression.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Net.Http.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Net.Sockets.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Reflection.Metadata.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.ValueTuple.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Xml.XPath.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\vbc.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\vbc.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\vbc.rsp
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\roslyn\VBCSCompiler.exe.config
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Antlr3.Runtime.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\EntityFramework.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\EntityFramework.SqlServer.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Microsoft.Web.Infrastructure.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Newtonsoft.Json.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Data.SqlClient.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Net.Http.Formatting.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Helpers.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Http.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Http.WebHost.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Mvc.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Optimization.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Razor.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.WebPages.Deployment.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.WebPages.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.WebPages.Razor.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\WebGrease.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\EntityFramework.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\EntityFramework.SqlServer.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Data.SqlClient.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Net.Http.Formatting.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Http.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Http.WebHost.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Helpers.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Mvc.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Optimization.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.Razor.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.WebPages.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.WebPages.Deployment.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\System.Web.WebPages.Razor.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Newtonsoft.Json.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Antlr3.Runtime.pdb
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.Helpers.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.Mvc.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.Optimization.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.Razor.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.WebPages.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\obj\Release\Crud2.csproj.AssemblyReference.cache
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\obj\Release\Crud2.csproj.CoreCompileInputs.cache
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\obj\Release\Crud2.csproj.CopyComplete
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\obj\Release\Crud2.dll
+C:\ProyectoLimpieza\VitaAlimentosLimpieza\Vamos mejorando\LimpProyect (Optimizado) - Copy\FormulariosProduccion\obj\Release\Crud2.pdb

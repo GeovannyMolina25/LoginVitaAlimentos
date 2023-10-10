@@ -1,0 +1,146 @@
+﻿@model IEnumerable<Crud2.Models.ProRegOprTanASE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Home/Menu.cshtml";
+    int codRegistro = @ViewBag.codRegistro;
+    DateTime fecha2 = @ViewBag.fecha;
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="~/Content/layout.css">
+<h2>Registro Operacional Tanque @ViewBag.codEquipo</h2>
+<br />
+<h3><b>@ViewBag.fecha.ToString("dd/MM/yyyy")  -- @ViewBag.hora</b></h3>
+
+<br />
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .letra {
+        font-size: medium;
+    }
+
+    .table td, th {
+        font-size: medium;
+    }
+</style>
+
+
+@{
+    string estado = ViewBag.codEstado;
+    List<string> rol = ViewBag.codRol;
+    string codEquipo = ViewBag.codEquipo;
+}
+
+
+    @if (estado == "Creado" || estado == "Rechazado")
+    {
+       
+        <p class="linea">
+            @Html.ActionLink("Editar", "Edit", new { hora = @ViewBag.hora, codEquipo = ViewBag.codEquipo, fecha = @ViewBag.fecha, codRegistro = @ViewBag.codRegistro }, new { @class = "btn btn-success btn-block letra" })
+        </p>
+        <p class ="linea" style="float:right " >
+            <a class="btn btn-danger btn-block letra" href="#"  data-toggle="modal" data-target="#confirm-delete-modal">Eliminar</a>
+        </p>
+    }
+    else if (estado == "Aprobado")
+    {
+
+    }
+
+
+
+
+<p class="" style="float:right ">
+    @if (estado == "Aprobado")
+    {
+        <label style="font-size: 18px; color: red; width: 200px; ">Registro Aprobado</label>
+    }
+    else if (estado == "Finalizado")
+    {
+        <label style="font-size: 18px; color: red; width: 200px; ">Registro Finalizado</label>
+    }
+</p>
+<br />
+
+<br />
+
+<table class="table table-striped table-bordered">
+    <tr>
+
+        <th>
+            Parametro
+        </th>
+        <th>
+            Valor
+        </th>
+        <th>
+            Unidad
+        </th>
+        <th>
+            Máximo
+        </th>
+        <th>
+            Mínimo
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProParametro.nombreParametro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valorProReg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProParametro.codUnidadMedida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.maximoParametro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.minimoParametro)
+            </td>
+        </tr>
+    }
+</table>
+
+<div class=" ">
+    @Html.ActionLink("Regresar", "ListaForms", new { codEquipo = @ViewBag.codEquipo, codRegistro = @ViewBag.codRegistro, fecha = @ViewBag.fecha, estado = estado }, new { @class = "btn btn-info btn-block linea letra" })
+</div>
+<!---Mensajes de Alerta/Confirmación-->
+<div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar eliminación</h5>
+            </div>
+            <div class="modal-body">
+                ¿Está seguro de que desea eliminar este registro?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                @Html.ActionLink("Eliminar", "DeleteConfirmedASE", new { codEquipo = @ViewBag.codEquipo, codRegistro = @ViewBag.codRegistro, fecha = @ViewBag.fecha, estado = estado, hora = @ViewBag.hora }, new { @class = "btn btn-danger" })
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script>
+        function confirmDelete() {
+            $('#confirm-delete-modal').modal('show');
+        }
+
+    </script>
+
+}

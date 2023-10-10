@@ -1,0 +1,312 @@
+﻿@model Crud2.Models.ProRegOprEstREDA1
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Home/Menu.cshtml";
+    string titulo = ViewBag.codEquipo;
+    string estado = ViewBag.estado;
+}
+
+<h2>Registro Operacional Esterilizador @titulo </h2>
+<link rel="stylesheet" href="~/Content/layout.css">
+
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+    .center {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+    }
+
+</style>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<body >
+   
+    <div class="container">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input type="hidden" name="codEquipo" value="@titulo" />
+        <input type="hidden" name="codRegistro" value="@ViewBag.codRegistro" />
+        <input type="hidden" name="fecha" value="@ViewBag.fecha" />
+        <input type="hidden" name="estado" value="@ViewBag.estado" />
+        <h3><b>@ViewBag.fecha.ToString("dd/MM/yyyy") </b></h3>
+        <br />
+        <div class="form-group ">
+            <label class="col-form-label" style="font-size: 18px; font-weight: normal">Hora: (HH:mm)</label>
+            <input id="hora" type="text" class="form-control" name="hora" inputmode="decimal" required onkeypress="return event.key!='e'">
+
+            <!-- RCAJAS  <label class="" style="font-size: 18px; font-weight: bold">Esterilización del equipo</label> -->
+            <br />
+            @Html.Label("PAROPERREDA01", "Temperatura precalentamiento", htmlAttributes: new { @class = " ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+            <br /><label class="" style="color:crimson; margin-right: 20px;">min:80,0</label>
+            <label style="color:crimson">max:140,0</label>
+            <div>
+                @Html.TextBox("PAROPERREDA01", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+                @Html.ValidationMessage("PAROPERREDA01", "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        @Html.Label("PAROPERREDA02", "Tiempo de esterilización del equipo", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:30,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA02", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA02", "", new { @class = "text-danger" })
+        </div>
+        <br />
+        <!-- RCAJAS <label class="" style="font-size: 18px; font-weight: bold">Temperatura de Operación</label> -->
+        @Html.Label("PAROPERREDA03", "Temperatura de esterilización del equipo", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:140</label>
+        <div>
+            @Html.TextBox("PAROPERREDA03", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA03", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+        @Html.Label("PAROPERREDA04", "Temperatura de vapor TVT", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">max:150,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA04", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA04", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA05", "Temperatura salida a Tq Aséptico T2CT", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal; margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:25,0</label>
+        <label style="color:crimson">max:30,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA05", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA05", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA06", "Temperatura entrada tubo de retención T1T", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:135</label>
+        <div>
+            @Html.TextBox("PAROPERREDA06", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA06", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA07", "Temperatura salida tubo de retención T1AT", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:135</label>
+        <div>
+            @Html.TextBox("PAROPERREDA07", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA07", "", new { @class = "text-danger" })
+        </div>
+
+
+
+        @Html.Label("PAROPERREDA08", "Presión entrada a homogenizador P3T", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">max:3,5</label>
+        <div>
+            @Html.TextBox("PAROPERREDA08", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA08", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA09", "Presión salida de homogenizador P4T", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">max:9,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA09", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA09", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA10", "Presión de Homogenizador", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">max:200</label>
+        <div>
+            @Html.TextBox("PAROPERREDA10", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA10", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA11", "Presión de vapor", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">max:6,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA11", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA11", "", new { @class = "text-danger" })
+        </div>
+        <br />
+
+
+        @Html.Label("PAROPERREDA12", "Presión Tubo de retención", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">max:3,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA12", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA12", "", new { @class = "text-danger" })
+        </div>
+        <br />
+        <!--RCAJAS <label class="" style="font-size: 18px; font-weight: bold">Flujo de Operación</label>-->
+
+        @Html.Label("PAROPERREDA13", "Fujo de entrada de producto al equipo FT1", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:12000</label>
+        <label style="color:crimson">max:13000</label>
+        <div>
+            @Html.TextBox("PAROPERREDA13", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA13", "", new { @class = "text-danger" })
+        </div>
+        <br />
+        <!--<label class="" style="font-size: 18px; font-weight: bold">CIP</label>-->
+
+        @Html.Label("PAROPERREDA14", "Concentración de soda", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal;margin-top:15px " })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:2,0</label>
+        <label style="color:crimson">max:3,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA14", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA14", "", new { @class = "text-danger" })
+        </div>
+
+
+        <br />
+        @Html.Label("PAROPERREDA15", "Concentración de ácido", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal ;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:1,0</label>
+        <label style="color:crimson">max:2,0</label>
+        <div>
+            @Html.TextBox("PAROPERREDA15", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA15", "", new { @class = "text-danger" })
+        </div>
+
+
+
+        @Html.Label("PAROPERREDA16", "pH enjuague final", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal;margin-top:15px" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:6,5</label>
+        <label style="color:crimson">max:7,4</label>
+        <div>
+            @Html.TextBox("PAROPERREDA16", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA16", "", new { @class = "text-danger" })
+        </div>
+
+
+
+        @Html.Label("PAROPERREDA17", "Flujo de recirculación", htmlAttributes: new { @class = "control-label ", @style = "font-size: 18px; font-weight: normal" })
+        <br /><label class="" style="color:crimson; margin-right: 20px;">min:12000</label>
+        <div>
+            @Html.TextBox("PAROPERREDA17", null, new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" })
+            @Html.ValidationMessage("PAROPERREDA17", "", new { @class = "text-danger" })
+        </div>
+        <br /><br />
+        <div>
+            <div class=" linea">
+                <input type="submit" value="Guardar" class="btn btn-success btn-block" id="guardarBtn" />
+            </div>
+            <div class=" linea">
+                @Html.ActionLink("Regresar", "ListaForms", new { codEquipo = ViewBag.codEquipo, codRegistro = @ViewBag.codRegistro, fecha = @ViewBag.fecha, estado = @ViewBag.estado }, new { @class = "btn btn-info btn-block" })
+            </div>
+        </div>
+
+    </div>
+
+    </body>
+
+    }
+
+
+
+    @section scripts{
+
+        <script>
+            document.getElementById("hora").focus();
+
+            const horaInput = document.getElementById("hora");
+
+            horaInput.addEventListener("input", function () {
+                const value = horaInput.value;
+
+
+
+                if (value.length > 5) {
+                    // Si se ingresaron más de 5 caracteres, eliminamos el último carácter
+                    horaInput.value = value.substring(0, 5);
+
+                    return;
+                }
+
+                if (value.length === 2) {
+                    // Si el usuario ingresó dos caracteres, agregamos los dos puntos automáticamente
+                    horaInput.value = value + ":";
+                    const hora = parseInt(value);
+                    if (hora >= 24) {
+                        alert("El numero de horas no puede exceder de 24");
+                        horaInput.value = "";
+                    }
+                }
+
+                if (value.length === 5) {
+                    // Verificamos que los minutos ingresados sean válidos
+                    const minutos = parseInt(value.substring(3, 5));
+                    if (minutos < 0 || minutos > 59) {
+                        alert("Los minutos ingresados no deben exceder de 59");
+                        horaInput.value = "";
+                        return;
+                    }
+                }
+            });
+
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function (event) {
+                const value = horaInput.value;
+
+                if (value.length !== 5) {
+                    alert("La hora ingresada cumple con el formato de HH:mm");
+                    event.preventDefault();
+                    return;
+                }
+
+                // Verificamos que las horas ingresadas sean válidas
+                const horas = parseInt(value.substring(0, 2));
+                if (horas < 0 || horas > 23) {
+                    alert("Las horas ingresadas no son válidasef.");
+                    horaInput.value = "";
+                    event.preventDefault();
+                    return;
+                }
+            });
+
+
+
+            horaInput.addEventListener("keydown", function (event) {
+                // Obtenemos el código de la tecla presionada
+                const key = event.keyCode || event.charCode;
+
+                // Obtenemos el rango de caracteres seleccionados
+                const selectionStart = horaInput.selectionStart;
+                const selectionEnd = horaInput.selectionEnd;
+
+                // Verificamos si no hay caracteres seleccionados y si la tecla presionada es la tecla de retroceso (8) o la tecla Supr (46), si es así, permitimos que se borre todo el contenido del campo
+                if (selectionStart === selectionEnd && (key === 8 || key === 46)) {
+                    horaInput.value = "";
+                } else {
+                    // Verificamos si la tecla presionada es un número (del 0 al 9), las teclas de flecha (37-40), si no es así, cancelamos el evento
+                    if (!((key >= 48 && key <= 57) || (key >= 96 && key <= 105) || (key >= 37 && key <= 40))) {
+                        event.preventDefault();
+                    }
+                }
+            });
+
+
+            function validarEntrada(input) {
+                var patron = /^(\d+([,.]\d{0,1})?)?$/;
+                input.value = input.value.replace(/\./g, ',');
+                var valor = input.value;
+                if (!patron.test(valor)) {
+                    input.value = input.value.slice(0, -1);
+
+                }
+            }
+
+        </script>
+    }

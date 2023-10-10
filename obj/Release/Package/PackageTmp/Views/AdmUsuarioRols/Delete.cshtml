@@ -1,0 +1,82 @@
+﻿@model Crud2.Models.AdmUsuarioRol
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Eliminar Asignación</h2>
+<link rel="stylesheet" href="~/Content/layout.css">
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+</style>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Usuario
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmUsuario.codUsuario)
+        </dd>
+        <br />
+        <dt>
+            Rol
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdmRol.nombreRol)
+        </dd>
+
+    </dl>
+    <br /><br />
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div>
+            <div class="linea ">
+                <a class="btn btn-danger btn-block letra" href="#" data-toggle="modal" data-target="#confirm-delete-modal">Eliminar</a>
+            </div>
+            <div class="linea">
+                @Html.ActionLink("Regresar ", "Index", new { }, new { @class = "btn btn-info btn-block letra" })
+            </div>
+        </div>
+    }
+</div>
+<!---Mensajes de Alerta/Confirmación-->
+<div class="modal fade" id="confirm-delete-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-delete-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm-delete-modal-label">Confirmar eliminación</h5>
+            </div>
+            <div class="modal-body">
+                ¿Está seguro de que desea eliminar este registro?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" onclick="deleteConfirmed()">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+         function confirmDelete() {
+            $('#confirm-delete-modal').modal('show');
+        }
+
+        function deleteConfirmed() {
+            // Llamar a la acción de eliminación
+            window.location.href = '@Url.Action("DeleteConfirmed", "AdmUsuarioRols", new { id = @ViewBag.id })';
+    }
+    </script>
+
+}

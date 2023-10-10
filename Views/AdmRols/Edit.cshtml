@@ -1,0 +1,63 @@
+﻿@model Crud2.Models.AdmRol
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+
+<h2>Editar Rol</h2>
+<link rel="stylesheet" href="~/Content/ViewDataTable.css">
+<link rel="stylesheet" href="~/Content/layout.css">
+
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .letra {
+        font-size: medium;
+    }
+</style>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <label class="control-label col-md-2">Codigo Registro</label>
+        <br />
+        <br />
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.codRegistro, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+
+            @Html.ValidationMessageFor(model => model.codRegistro, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @Html.HiddenFor(model => model.codRol)
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Nombre Rol</label>
+        <br /><br />
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.nombreRol, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.nombreRol, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <br /><br />
+
+    <div>
+        <div class="linea ">
+            <input type="submit" value="Guardar" class="btn btn-success btn-block letra " />
+        </div>
+        <div class="linea">
+            @Html.ActionLink("Regresar ", "Index", new { }, new { @class = "btn btn-info btn-block letra" })
+        </div>
+    </div>
+</div>
+}

@@ -1,0 +1,50 @@
+﻿@model Crud2.Models.AdmRol
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Home/Menu.cshtml";
+}
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+</style>
+<h2>Detalles del Rol</h2>
+<link rel="stylesheet" href="~/Content/layout.css">
+<div>
+    <hr />
+    <dl class="dl-horizontal" style="font-size: medium">
+        <dt>
+            @Html.DisplayNameFor(model => model.codRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codRegistro)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.codRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codRol)
+        </dd>
+        <br />
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreRol)
+        </dd>
+    </dl>
+</div>
+<p>
+    <div>
+        <div class=" linea">
+            @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-info btn-block" })
+        </div>
+    </div>
+</p>

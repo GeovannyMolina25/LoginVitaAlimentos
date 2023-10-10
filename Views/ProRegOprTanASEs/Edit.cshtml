@@ -1,0 +1,100 @@
+﻿@model List<Crud2.Models.ProRegOprTanASE>
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Home/Menu.cshtml";
+
+}
+<link rel="stylesheet" href="~/Content/layout.css">
+<h2>Registro Operacional Tanque @ViewBag.codEquipo</h2>
+<style>
+    .linea {
+        display: inline-block;
+        width: 160px;
+        padding-right: 20px;
+    }
+
+    .letra {
+        font-size: medium;
+    }
+</style>
+<br />
+
+<h3><b>@ViewBag.fecha.ToString("dd/MM/yyyy")  -- @ViewBag.hora</b></h3>
+
+
+@using (Html.BeginForm("UpdateProRegOprTanASE", "ProRegOprTanASEs", new { codRegistro = ViewBag.codRegistro, codEquipo = @ViewBag.codEquipo, hora = @ViewBag.hora, fecha = @ViewBag.fecha }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @for (int i = 0; i < Model.Count; i++)
+        {
+
+            <div class="form-group">
+                <label class="" style="font-size: 18px; font-weight: normal">
+                    @Html.DisplayFor(model => model[i].ProParametro.nombreParametro)
+                </label>
+
+                <br /><label class="" style="color:crimson; margin-right: 20px;">min: @Html.DisplayFor(model => model[i].ProParametro.minimoParametro)</label>
+                <label style="color:crimson">max: @Html.DisplayFor(model => model[i].ProParametro.maximoParametro)</label>
+
+                <div class="">
+                    @Html.HiddenFor(model => model[i].codRegistroFormulario)
+                    @Html.HiddenFor(model => model[i].horaTrabajoProReg)
+                    @Html.HiddenFor(model => model[i].fechaTrabajoProReg)
+
+                    @Html.HiddenFor(model => model[i].ProAdmForm.AdmEstado.nombreEstado)
+                    @Html.HiddenFor(model => model[i].codRegistro)
+                    @Html.EditorFor(model => model[i].valorProReg, new { htmlAttributes = new { @class = "form-control", @type = "text", @onkeyup = "validarEntrada(this)", @inputmode = "decimal", @onkeypress = "return event.key!='e'" } })
+
+                    @Html.ValidationMessageFor(model => model[i].valorProReg, "", new { @class = "text-danger", @type = "number" })
+                </div>
+            </div>
+
+        }
+
+        <div>
+            <div class="linea ">
+                <input type="submit" value="Guardar" class="btn btn-success btn-block letra " />
+            </div>
+            <div class="linea">
+                @Html.ActionLink("Regresar ", "Index", new { codEstado = ViewBag.codEstado, codEquipo = ViewBag.codEquipo, fecha = @ViewBag.fecha, hour = @ViewBag.hora, codRegistro = @ViewBag.codRegistro }, new { @class = "btn btn-info btn-block letra" })
+            </div>
+        </div>
+
+    </div>
+}
+
+<div>
+</div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function () {
+                $('input[type="text"]').each(function () {
+                    var inputValue = $(this).val().replace('.', ',');
+                    $(this).val(inputValue);
+                });
+            });
+        });
+
+
+        function test(e) {
+            e.value = e.value.replace(/\./g, ',')
+        }
+
+        function validarEntrada(input) {
+            var patron = /^(\d+([,.]\d{0,1})?)?$/;
+            input.value = input.value.replace(/\./g, ',');
+            var valor = input.value;
+            if (!patron.test(valor)) {
+                input.value = input.value.slice(0, -1);
+
+            }
+        }
+    </script>
+}
